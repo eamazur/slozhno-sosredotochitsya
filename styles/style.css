@@ -2,4 +2,13 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: beige;
+}
+
+.theme_light {
+  background-color: aqua;
+}
+
+.theme_dark {
+  background-color: blueviolet;
 }
