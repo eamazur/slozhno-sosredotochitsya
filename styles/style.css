@@ -2,14 +2,188 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-font-family: var(--font-face);
+  font-family: var(--font-face);
+  background-color: var(--background-color);
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--text-color);
+  padding: 10px;
+  background-image: url(/images/cover-image-dark.png);
+  background-attachment: fixed;
+}
+
+.header {
+  block-size: 100vh;
+  display: grid;
+  grid-template-rows: min-content auto auto min-content min-content;
+}
+
+.header__decoraction {
+  color: rgb(var(--accent-color));
+  text-transform: uppercase;
+  justify-self: end;
+  position: absolute;
+  top:10px;
+  right: 10px;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: auto 26px;
+  justify-content: center;
+  place-items: center;
+}
+
+.border-decoration {
+  display: inline-block;
+  block-size: 25px;
+  inline-size: 25px;
+}
+
+.border-decoration-start {
+  border-block-start: 1px solid rgb(var(--accent-color));
+  border-inline-end: 1px solid rgb(var(--accent-color));
+  justify-self: end;
+}
+
+.border-decoration-end {
+  border-block-end: 1px solid rgb(var(--accent-color));
+  border-inline-start: 1px solid rgb(var(--accent-color));
+}
+
+.header__decoraction-circle {
+  display: inline-block;
+  block-size: 26px;
+  inline-size: 26px;
 }
 
 .recording-circle {
   display: inline-block;
   block-size: 9px;
   inline-size: 9px;
-  background-color: var(--accent-color);
+  background-color: rgb(var(--accent-color));
   border-radius: 50%;
-  box-shadow: var(--accent-color) 0px 0px 4px 2px;
+  box-shadow: rgb(var(--accent-color)) 0px 0px 4px 2px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 11.5px;
+}
+
+.header__theme-menu-button {
+  inline-size: 70px;
+  block-size: 26px;
+  color: rgb(var(--accent-color));
+  line-height: 1em;
+  text-transform: lowercase;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  border: solid 1px rgba(var(--accent-color), var(--button-border-alpha));
+}
+
+.header__theme-menu-button_type_dark {
+  border: solid 1px rgb(var(--accent-color));
+}
+
+.header__theme-menu-button:active {
+  border: solid 1px rgb(var(--accent-color));
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+.main-headline {
+  --accent-color: 255, 0, 112;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 82.5%;
+  color: var(--headline-color);
+  text-shadow: rgb(var(--accent-color)) 4px 4px;
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section__subheader {
+  background-color: rgb(var(--accent-color));
+  font-size: 18px;
+  font-weight: bold;
+  color:var(--background-color);
+}
+
+.section__header {
+  color: rgb(var(--accent-color));
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section__list {
+  display: grid;
+  gap: 20px;
+}
+
+.section__list-item {
+  display: grid;
+  gap: 10px;
+}
+
+.section__link {
+  text-decoration: none;
+  text-shadow: rgb(var(--accent-color)) 2px 2px;
+}
+
+.section__link:hover {
+  /*text-decoration: underline;*/
+  border-block-end: 2px solid var(--text-color);
+}
+
+.section__paragraph-header {
+  background-color: rgb(var(--accent-color));
+  font-weight: normal;
+  color: var(--background-color);
+
+}
+
+.section__image-list {
+  display: grid;
+  gap: 10px;
+}
+
+.section__image {
+  inline-size: 90%;
+}
+
+.footer {
+  block-size: 100vh;
+  display: grid;
+}
+
+.footer__border-decoration-start {
+  justify-self: end;
+  
+}
+
+.footer__headline {
+  justify-self: center;
+}
+
+.footer__border-decoration-end {
+  align-self: end;
 }
