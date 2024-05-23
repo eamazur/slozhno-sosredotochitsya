@@ -331,10 +331,6 @@
     grid-column-start: 2;
     grid-column-end: span 2;
   }
-
-  .footer__headline {
-    padding-block-start: 18px;
-  }
 }
 
 @media (width >= 1024px) {
