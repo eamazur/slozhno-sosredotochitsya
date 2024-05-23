@@ -224,6 +224,7 @@
 
 .footer {
   block-size: calc(100vb - 2 * var(--page-margin));
+  margin-block-start: var(--page-margin);
   min-block-size: 647px;
   display: grid;
 }
