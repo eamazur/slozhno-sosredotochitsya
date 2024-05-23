@@ -10,10 +10,11 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-    --font-face: IBM Plex mono, monospace;
-    --accent-color: 255, 0, 112;
-    --headline-color: #db00ff;
-    --background-color:#000028;
-    --text-color: #f1b2ce;
-    --button-border-alpha: 0.4;
+  --font-face: IBM Plex mono, monospace;
+  --accent-color: 255, 0, 112;
+  --headline-color: #db00ff;
+  --background-color: 0, 0, 40;
+  --subheader-color: var(--background-color);
+  --text-color: #f1b2ce;
+  --button-border-alpha: 0.4;
 }
