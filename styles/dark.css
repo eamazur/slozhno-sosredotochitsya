@@ -15,6 +15,6 @@
   --headline-color: #db00ff;
   --background-color: 0, 0, 40;
   --subheader-color: var(--background-color);
-  --text-color: #f1b2ce;
+  --text-color: 241, 178, 206;
   --button-border-alpha: 0.4;
 }
