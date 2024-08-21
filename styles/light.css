@@ -13,11 +13,11 @@
   --accent-color-headline: 255, 0, 112;
     --accent-color: 255, 141, 203;
     --headline-color: #ffc2e6;
-    --background-color: #fff1f7;
+    --background-color: 255, 241, 247;
     --text-color: 53, 52, 48;
     --button-border-alpha: 0.4;
 
-  background-image: url(/images/cover-image-light.png);
+  background-image: url(./images/cover-image-light.png);
 
   .section__header {
     color: rgb(var(--text-color));
